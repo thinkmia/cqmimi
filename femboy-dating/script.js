@@ -34,21 +34,25 @@ class DatingApp {
         });
     }
 
-    loadProfiles() {
-        // Try to load profiles from localStorage first (added by admin)
-        const storedProfiles = localStorage.getItem('femboyDatesProfiles');
-        if (storedProfiles) {
-            try {
-                this.profiles = JSON.parse(storedProfiles);
-            } catch (e) {
-                console.log('Error loading stored profiles, using defaults');
-                this.loadSampleProfiles();
-            }
-        } else {
-            // Load sample profiles if no stored profiles exist
-            this.loadSampleProfiles();
+async loadProfiles() {
+    try {
+        const response = await fetch('profiles.json'); // Same directory
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
+
+        const data = await response.json();
+
+        if (data && Array.isArray(data.profiles)) {
+            this.profiles = data.profiles;
+        } else {
+            console.warn('Invalid profile format in profiles.json. Falling back to sample profiles.');
+        }
+    } catch (error) {
+        console.error('Failed to load profiles from profiles.json:', error);
     }
+}
+
 
     loadSampleProfiles() {
         const sampleProfiles = [
