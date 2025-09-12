@@ -1,22 +1,10 @@
 {
   "profiles": [
     {
-      "name": "Alex",
-      "age": 22,
-      "description": "Love gaming, anime, and long walks on the beach. Looking for someone to share cozy nights in with! 🎮✨",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&crop=face"
-    },
-    {
-      "name": "Jamie",
-      "age": 24,
-      "description": "Art student with a passion for creativity. Soft aesthetic lover and plant parent. Let's create something beautiful together! 🌸🎨",
-      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=600&fit=crop&crop=face"
-    },
-    {
-      "name": "Taylor",
-      "age": 20,
-      "description": "Bookworm and coffee enthusiast. Love cozy sweaters and deep conversations. Looking for my reading buddy! 📚☕",
-      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=600&fit=crop&crop=face"
+      "name": "Astolfo",
+      "age": 18,
+      "description": "You're weird. Actually, this is a femboy dating website to be fair.\nLikes sports, anime and weird dresses.",
+      "image": "https://cqmimi.xyz/GRMpaSVakAA6Fgp.jpg-large.jpeg"
     }
   ]
 }
