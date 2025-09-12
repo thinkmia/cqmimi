@@ -11,9 +11,9 @@ class DatingApp {
         this.init();
     }
 
-    init() {
+    async init() {
         this.setupEventListeners();
-        this.loadProfiles();
+        await this.loadProfiles();
         this.updateDisplay();
     }
 
