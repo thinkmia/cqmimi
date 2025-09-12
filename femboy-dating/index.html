@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femboy Dates - Dating App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>💕 Femboy Dates</h1>
+        </header>
+
+        <div class="card-stack">
+            <div class="card" id="card-template" style="display: none;">
+                <div class="card-image">
+                    <img src="" alt="Profile picture">
+                </div>
+                <div class="card-info">
+                    <h2 class="name"></h2>
+                    <p class="age"></p>
+                    <p class="description"></p>
+                </div>
+                <div class="swipe-overlay left">
+                    <span>NOPE</span>
+                </div>
+                <div class="swipe-overlay right">
+                    <span>LIKE</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-btn reject" id="reject-btn">
+                <span>✕</span>
+            </button>
+            <button class="action-btn like" id="like-btn">
+                <span>♥</span>
+            </button>
+        </div>
+
+        <div class="empty-state" id="empty-state">
+            <h2>No more profiles!</h2>
+            <p>Add some profiles to start swiping</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
