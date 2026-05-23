@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joachim — Voice Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0f1117;
+  color: #e2e0db;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.65;
+  padding: 4rem 2rem 6rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #2a2d36;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.15rem;
+}
+
+.subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: #4e9fd4;
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.langs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.lang {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  background: #1c1f28;
+  border: 1px solid #2a2d36;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  color: #a0a8b8;
+}
+
+.lang .level {
+  color: #3d4251;
+  margin-left: 0.3rem;
+}
+
+.project {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid #1e2028;
+}
+.project:last-child { border-bottom: none; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.2rem;
+}
+
+.project-title { font-weight: 500; font-size: 0.95rem; color: #eceae5; }
+
+.project-date {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  color: #3a3e4a;
+  white-space: nowrap;
+}
+
+.project-type {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.66rem;
+  color: #4e9fd4;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.55rem;
+}
+
+.project-desc {
+  font-size: 0.87rem;
+  color: #737880;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Joachim</h1>
+  <p class="subtitle">voice actor · portfolio 2025</p>
+  <div class="langs">
+    <span class="lang">Polish <span class="level">native</span></span>
+    <span class="lang">German <span class="level">native</span></span>
+    <span class="lang">English <span class="level">fluent</span></span>
+  </div>
+</header>
+
+<div class="project">
+  <div class="row">
+    <span class="project-title">Fitness App Onboarding (German)</span>
+    <span class="project-date">Jan 2025</span>
+  </div>
+  <p class="project-type">E-Learning VO · German</p>
+  <p class="project-desc">Voiced the onboarding screens for a fitness app. 8 short clips, kept it upbeat. Delivered as individual MP3s.</p>
+</div>
+
+<div class="project">
+  <div class="row">
+    <span class="project-title">Online Store Product Videos (Polish)</span>
+    <span class="project-date">May 2025</span>
+  </div>
+  <p class="project-type">Commercial VO · Polish</p>
+  <p class="project-desc">Did voiceovers for product videos on a Polish online shop. 5 videos, around 30 to 60 seconds each. Tried to keep it natural, not too scripted sounding.</p>
+</div>
+
+<div class="project">
+  <div class="row">
+    <span class="project-title">Explainer Video for a SaaS Tool (English)</span>
+    <span class="project-date">Aug 2025</span>
+  </div>
+  <p class="project-type">Commercial VO · English</p>
+  <p class="project-desc">2 minute explainer video for a web app. Client wanted a neutral European English accent. Recorded and sent as WAV.</p>
+</div>
+
+</body>
+</html>
